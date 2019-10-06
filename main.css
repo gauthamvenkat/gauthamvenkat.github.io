@@ -1,0 +1,195 @@
+#navbar {
+    overflow: hidden;
+    background-color:white;
+    padding: 20px 50px; /* Large padding which will shrink on scroll (using JS) */
+    transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+    position: fixed; /* Sticky/fixed navbar */
+    width: 96%;
+    top: 0; /* At the top */
+    z-index: 19;
+  }
+  /* Style the navbar links */
+  #navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  #navbar-right {
+    float: right;
+  }  
+  /* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
+  @media screen and (max-width: 580px) {
+    #navbar {
+      padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+    }
+    #navbar a {
+      float: none;
+      text-align: left;
+    }
+    #navbar-right {
+      float: none;
+    }
+  }
+
+
+  .sidebar {
+    height: 100%;
+    width: 90px;
+    position: fixed;
+    z-index: 1;
+    top: 90px;
+    left: 0;
+    background-color:white;
+    overflow-x: hidden;
+    padding-top: 16px;
+  }
+  
+  /* Style sidebar links */
+  .sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    height: 50px;
+  }
+  /* Style links on mouse-over */
+  .sidebar a:hover {
+    color: lightgreen;
+  }
+  
+  /* Style the main content */
+  .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+  }
+  
+  /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  #content
+  {
+      font-family:"Open Sans"; 
+      position: absolute;
+      top: 26%;
+      left: 34.2%;
+      transform: translate(-50%, -50%);
+      text-align: left;
+  }
+  #order
+  {
+    background-color:white;
+  }
+  #order h2
+  {
+    color: rgb(13, 208, 238);
+  }
+  #order p
+  {
+    color: grey;
+  }
+  .button {
+    background-color: white;
+    color: rgb(13, 208, 238);
+    border: 2px solid rgb(13, 208, 238); /* Green */
+  }
+  #product1
+  {
+      font-family:"Open Sans"; 
+      position: absolute;
+      top: 57%;
+      left: 18%;
+      transform: translate(-50%, -50%);
+      text-align: left;
+      background-color:white;
+  }
+  #product2
+  {
+      font-family:"Open Sans"; 
+      position: absolute;
+      top: 57%;
+      left: 35%;
+      transform: translate(-50%, -50%);
+      text-align: left;
+      background-color:white;
+  }
+  #product3
+  {
+      font-family:"Open Sans"; 
+      position: absolute;
+      top: 57%;
+      left: 52%;
+      transform: translate(-50%, -50%);
+      text-align: left;
+      background-color:white;
+  }
+  #product1 p
+  {
+    color: grey;
+  }
+  #copyright
+  {
+      font-family:"Open Sans"; 
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: left;
+      color:grey;
+  }
+  #copyright h3
+  {
+    text-align: center;
+  }
+  #extra
+  {
+    font-family:"Open Sans"; 
+      position: absolute;
+      top: 106%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: left;
+      color:grey;
+  }
+  #twitter
+  {
+    position: absolute;
+    top: 90%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color:grey;
+  }
+  #linkedin
+  {
+    position: absolute;
+    top: 90%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color:grey;
+  }
+  #instagram
+  {
+    position: absolute;
+    top: 90%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color:grey;
+  }
+  #facebook
+  {
+    position: absolute;
+    top: 90%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color:grey;
+  }
